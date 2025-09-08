@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './Home';
+import Terms from './Terms';
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
 
               <Routes>
                 <Route index element={<Home />} />
+                <Route path="/terms" element={<Terms />} />
               </Routes>
             </BrowserRouter>
       </div>
